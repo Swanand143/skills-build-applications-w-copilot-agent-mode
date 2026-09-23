@@ -8,6 +8,7 @@ import workoutsRouter from './api/workouts/index.js';
 
 const app = express();
 const port = 8000;
+// Use CODESPACE_NAME to expose the backend on port 8000 through the GitHub Codespaces URL, with a localhost fallback.
 const codespaceName = process.env.CODESPACE_NAME;
 const apiUrl = codespaceName
   ? `https://${codespaceName}-8000.app.github.dev`
