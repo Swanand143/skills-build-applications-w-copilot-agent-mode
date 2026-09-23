@@ -8,6 +8,7 @@ import Workout from '../models/Workout.js';
 
 async function seedDatabase() {
   try {
+    // Seed the octofit_db database with test data
     console.log('Seed command: npm run seed populates test data for the OctoFit Tracker application by resetting octofit_db.');
     await mongoose.connect(connectionString);
 
