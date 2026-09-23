@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import { fetchCollection } from '../lib/api.js'
 import { ResourcePage, ResourceState } from './ResourceState.jsx'
 
+// Codespaces API endpoint: -8000.app.github.dev/api/activities/
 function Activities() {
   const [activities, setActivities] = useState([])
   const [state, setState] = useState({ loading: true, error: '' })
